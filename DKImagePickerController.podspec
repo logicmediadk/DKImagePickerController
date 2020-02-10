@@ -40,14 +40,14 @@ Pod::Spec.new do |s|
 
   s.subspec 'Camera' do |camera|
     camera.dependency 'DKImagePickerController/Core'
-    camera.dependency 'DKCamera'
+    camera.dependency 'DKCamera', '1.6.4'
 
     camera.source_files = "Sources/Extensions/DKImageExtensionCamera.swift"
   end
 
   s.subspec 'InlineCamera' do |inlineCamera|
     inlineCamera.dependency 'DKImagePickerController/Core'
-    inlineCamera.dependency 'DKCamera'
+    inlineCamera.dependency 'DKCamera', '1.6.4'
 
     inlineCamera.source_files = "Sources/Extensions/DKImageExtensionInlineCamera.swift"
   end
